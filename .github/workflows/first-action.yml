@@ -1,0 +1,27 @@
+
+#workflow name
+name: First Workflow
+# event/events that define when the workflow will run. workflow_dispatch is a trigger for manual event
+on: workflow_dispatch
+#stating that we are about to list the jobs of the workflow below
+jobs:
+#stating the name of the job. Has to be located under the jobs declarion 
+  first-job:
+  #stating the env that this job will run under
+    runs-on: ubuntu-latest
+    #declearing 'steps' in order to list the steps that will be executed within the job
+    steps:
+      - name: Print hello
+        run: echo "Hello World!"
+      - name: Print Goodbye
+        run: echo "Goodbye!"
+
+
+
+
+
+
+
+
+
+
